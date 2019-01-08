@@ -50,7 +50,7 @@ def send_menu(message):
         bot.send_message(botinfo['userid'],textinfo)
         pass
 
-    #bot.send_message(-342008533, '你好'+name+' 有什么可以帮到您的?')
+    #bot.send_message(-34233, '你好'+name+' 有什么可以帮到您的?')
 
 #正式拉代码
 @bot.message_handler(commands=None,regexp='.*_.*')
@@ -80,7 +80,7 @@ def echo(message):
     bot.reply_to(message, '有问题请群里@我，我不回私人消息，抱歉。。。。')
 a=''
 #直接发送消息
-bot.send_message(-3412008533, '<b>123123</b>',parse_mode='html')
+bot.send_message(-3412533, '<b>123123</b>',parse_mode='html')
 #如果要退出请用exit()强制退出
 #'https://api.telegram.org/bot619423079:AAFPQuGFbCwH8O3jSefntGa8rd0Tr_Wq_zs/sendMessage?chat_id=-342008533&text=123'
 #"https://core.telegram.org/bots"
@@ -92,16 +92,16 @@ from telebot import types
 # itembtn3 = types.KeyboardButton('d')
 # markup.add(itembtn1, itembtn2, itembtn3)
 #
-# bot.send_message(-342008533, "Choose one letter:", reply_markup=markup)
+# bot.send_message(-34233, "Choose one letter:", reply_markup=markup)
 
 keyboard = types.InlineKeyboardMarkup()
 keyboard.add(types.InlineKeyboardButton('12345', callback_data="getUsers"))
 
-bot.send_message(-342008533, "Choose one letter:", reply_markup=keyboard)
+bot.send_message(-348533, "Choose one letter:", reply_markup=keyboard)
 
 
 
 @bot.callback_query_handler(func=lambda call: True)
 def private_query(query):
     if(query.data=="getUsers"):                                        #'https://pastebin.com/9FmMbk3c'
-        bot.send_message(-342008533, '<b>123123</b>',parse_mode='html')
+        bot.send_message(-3428533, '<b>123123</b>',parse_mode='html')
