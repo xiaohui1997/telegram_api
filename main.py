@@ -80,7 +80,7 @@ def echo(message):
     bot.reply_to(message, '有问题请群里@我，我不回私人消息，抱歉。。。。')
 a=''
 #直接发送消息
-bot.send_message(-342008533, '<b>123123</b>',parse_mode='html')
+bot.send_message(-3412008533, '<b>123123</b>',parse_mode='html')
 #如果要退出请用exit()强制退出
 #'https://api.telegram.org/bot619423079:AAFPQuGFbCwH8O3jSefntGa8rd0Tr_Wq_zs/sendMessage?chat_id=-342008533&text=123'
 #"https://core.telegram.org/bots"
